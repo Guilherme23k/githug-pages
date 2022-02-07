@@ -1,0 +1,499 @@
+@font-face {
+  font-family: 'logo';
+  src: url(Calton-CaltonRegularStencil.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: montserrat;
+  }
+  nav{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: #092a49;
+    z-index: 1;
+  }
+  #logoImg{
+    margin-top: 5px;
+    margin-left: 75px;
+    float: left;
+    width: 100px;
+    height: 80px;
+  }
+  label.logo{
+    
+    font-family: logo;
+    color: white;
+    font-size: 50px;
+    line-height: 85px;
+    padding: 0 10px;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 85px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    
+    #logoImg{
+      margin-left: 8em;
+    }
+
+    .checkbtn{
+      display: block;
+      margin-right: 200px;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  
+  .sobre{
+    border-top: solid;
+    border-color: #353839;
+    width: 100%;
+    height: 25em;
+    padding: 0px 3px;
+  }
+  .details{
+    
+    
+    background-image: url(FUNDO1.jpg);
+    
+    
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #primary{
+    color: white;
+    padding-top: 1em;
+    padding-left: 30px;
+    font-size: 70px;
+  }
+
+  .sobre .desc{
+    color: #d6daf5;
+    font-weight: 350;
+    margin: 10px 0;
+    font-size: 30px;
+    line-height: 28px;
+    padding-left: 30px;
+    padding-bottom: 25px;
+  }
+
+  @media screen and (max-width: 952px){
+    #primary{
+      font-size: 44.8px;	
+    }
+    #desc{
+      font-size: 20px;
+    }
+    .logoSobre{
+      max-width: 100%;
+      max-height: 300px;
+      width: 300px;
+      height: auto;
+      object-fit: contain;
+    }
+}
+
+.container{
+  
+  padding: 24px 12px;
+  background: #edf0f4;
+  margin-top: 1.5em;
+}
+
+.container h2{
+  color: #165a72;
+  font-weight: 100;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 47.2px;
+  padding: 10px 2em;
+}
+
+
+.glide{
+  padding-top: 10px;
+}
+.glide__slide{
+  margin: 5px;
+  width: 200px;
+  height: auto;
+}
+
+
+.flexbox{
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.fa-color{
+  color: #3d477b
+  ;
+}
+ul li h3{
+  color: black;
+  font-size: 30px;
+  font-weight: 500;
+}
+button{
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+
+.consultoria{
+  background-image: url(SEILA.jpeg);
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  height: 25em;
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.consultoriaText{
+  display: inline-block;
+  color: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-left: 30px;
+  font-size: 5em;}
+
+.consultoria h3{
+  color: rgb(247, 247, 247);
+  font-weight: 430;
+    margin: 10px 0;
+    font-size: 40px;
+    line-height: 43px;
+    padding-left: 30px;
+    padding-bottom: 25px;
+  
+}
+.animate-consultoria{
+  
+  overflow: hidden;
+  white-space: nowrap;
+  animation: type 3.5s steps(40,end), caret-blink 500ms ease infinite;
+  border-right: 5px solid white;
+  animation-delay: 1s;
+}
+@keyframes type {
+  from{width: 0;}
+  to{width: 6.4em;}
+}
+
+@keyframes caret-blink {
+  0% {
+    border-color: transparent;
+  }
+
+  50%{
+    border-color: white;
+  }
+
+  100%{
+    border-color: transparent;
+  }
+}
+.flex-container_consultoria {
+  display: flex;
+  float: right;
+
+}
+
+.flex-child {
+  flex: 1;
+  width: 180px;
+  height: 25em;
+  border: 2px solid yellow;
+  background-color: green;
+  margin-right: 20px;
+  padding-right: 50px;
+}  
+
+
+@media (max-width: 1000px){
+
+  .consultoriaText{
+    font-size: 30px;
+  }
+
+  .consultoria h3{
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .flex-child{
+    width: 100px;
+    margin-right: 5px;
+    height: 16.5em;
+  }
+
+  .consultoria{
+    height: 16.5em;
+  }
+}
+
+@media (max-width: 768px){
+  .consultoria{
+    height: 16.5em;
+    width: 26em;
+  }
+
+  .flex-child{
+    width: 90px;
+    height: 16.5em;
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  
+  .consultoriaText{
+    font-size: 25px;
+  }
+
+  .consultoria h3{
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  .consultoria{
+    height: 16.5em;
+    width: 50%;
+  }
+
+  .flex-child{
+    margin-left: -5px;
+    width: 80px;
+    height: 16.5em;
+  }
+}
+
+.projetos{  
+  background-image: url(fundo_projetos.jpeg);
+  display: inline-block;
+  position: relative;
+  width: 50%;
+  height: 25em;
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+  
+  .projetosText{
+    display: inline-block;
+    color: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: 5em;}
+  
+  .projetos h3{
+    color: rgb(247, 247, 247);
+    font-weight: 430;
+      margin: 10px 0;
+      font-size: 40px;
+      line-height: 43px;
+      padding-left: 30px;
+      padding-bottom: 25px;
+    
+  }
+  
+  .flex-container_projetos{
+    display: flex;
+    float: left;
+  
+  }
+  
+  .flex-child {
+    flex: 1;
+  width: 180px;
+  height: 25em;
+  border: 2px solid yellow;
+  background-color: green;
+  margin-right: 20px;
+  padding-right: 50px;
+  }  
+  
+  /* MEDIAS QUERIES */
+
+  @media (max-width: 1024px) {
+    #logoImg{
+      margin-left: 20px;
+    }
+
+    label.logo{
+      font-family: logo;
+    color: white;
+    font-size: 35px;
+    line-height: 85px;
+    padding: 0 10px;
+    }
+
+    nav ul li a{
+      color: white;
+      font-size: 13.5px;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+
+    .consultoriaText, .projetosText{
+      font-size: 3.5em;
+    }
+
+    .consultoria h3{
+      font-size: 2em;
+      line-height: 40px;
+    }
+
+    .projetos h3{
+      font-size: 2em;
+      line-height: 40px;
+    }
+
+    .flex-child{
+      width: 8em;
+      height: 25em;
+      margin-left: 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+      .checkbtn{
+        margin-right: 50px;
+        line-height: 85px;
+      }
+
+      .consultoria, .projetos{
+        width: 24em;
+        height: 16.5em;
+      }
+
+
+      .consultoria h3, .projetos h3{
+        font-size: 1.5em;
+        line-height: 20px;
+      }
+      
+    .flex-child{
+      width: 5.5em;
+      height: 16.5em;
+    }
+
+  }
+
+  @media (max-width:425px) {
+
+    label.logo{
+      display: none;
+    }
+
+    .details{
+      height: 20em;
+      
+    }
+
+    #primary{
+      font-size: 30px;
+    }
+
+    .sobre .desc{
+      font-size: 20px;
+    }
+
+    .sobre{
+      height: 20em;
+    }
+
+    .flex-container_consultoria{
+
+      display: inline-block;
+    }
+
+  }
+
+
+  

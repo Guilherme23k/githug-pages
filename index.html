@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Site</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <nav id="nav">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <img src="logo.png" alt="Hs logo" id="logoImg">
+        <label class="logo">HS smart solutions</label>
+        <ul>
+            <li><a class="active" href="#">Início</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Consultoria</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Treinamentos</a></li>
+        </ul>
+    </nav>
+
+    <header class="sobre">
+        <div class="details" data-aos="fade-right">
+            <h1 id="primary">HS smart solutions</h1>
+            <p class="desc">A HS smart solutions é uma empresa focada em soluções de tecnologia e segurança eletronica,
+                voltada para consultoria, projetos, treinamentos e instalações, sempre visando oque à de mais novo no
+                mercado para trazer segurança e comodidade para seus clientes.</p>
+        </div>
+    </header>
+
+
+
+
+    <section class="container">
+        <h2>Serviços</h2>
+    <div class="carousel flexbox">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+
+                    <li class="glide__slide">
+                        <i class="fas fa-clipboard-list fa-6x fa-color"></i>
+                        <h3>Projetos</h3>
+                    </li>
+                    <li class="glide__slide">
+                        <i class="fas fa-graduation-cap fa-6x fa-color"></i>
+                        <h3>Treinamentos</h3>
+                    </li>
+
+                    <li class="glide__slide">
+                        <i class="fas fa-user-headset fa-6x fa-color"></i>
+                        <h3>Consultoria</h3>
+                    </li>
+
+                    <li class="glide__slide">
+                        <i class="fas fa-handshake fa-6x fa-color"></i>
+                        <h3>Serviços</h3>
+                    </li>
+
+                    <li class="glide__slide">
+                        <i class="fas fa-tools fa-6x fa-color"></i>
+                        <h3>Instalação</h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-angle-left fa-lg"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-angle-right fa-lg"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container" data-aos="fade-right">
+
+    <div class="consultoria">
+    <h1 class="consultoriaText">Consultoria</h1> 
+    <h3 data-aos="fade-up"> Ideal para profissionais, empresas e condomínios.
+         Posicionamento e ultilização de equipamentos, 
+         descrição de produtos e analise de vulnerabilidade.</h3>
+    </div>
+    <div class="flex-container_consultoria">
+
+        <div class="flex-child magenta" data-aos="flip-right">
+          coluna 1
+        </div>
+        
+        <div class="flex-child green">
+          coluna 2
+        </div>
+
+        <div class="flex-child red">
+          coluna 3
+        </div>
+        
+      </div>
+
+
+</section>
+
+<section class="container" data-aos="fade-left">
+
+    <div class="flex-container_projetos">
+
+        <div class="flex-child magenta" data-aos="flip-right">
+          coluna 1
+        </div>
+        
+        <div class="flex-child green">
+          coluna 2
+        </div>
+
+        <div class="flex-child red">
+          coluna 3
+        </div>
+        
+      </div>
+
+    <div class="projetos">
+        <h1 class="projetosText">Projetos</h1> 
+        <h3 data-aos="fade-up">Elaboração de projetos nas áreas de segurança
+             eletrônica em geral, CFTV, controle de acesso
+             , vídeo porteiro, alarme e network voltado para industrias, comercios
+              e setor privado.</h3>
+        </div>
+
+
+
+</section>
+    <br>
+    <br>
+    <br>
+    <br>
+    </div>
+
+
+<!----------------------SCRIPSTS---------------->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        const config = {
+            type: 'carousel',
+            perView: 4,
+            focusAt: 'center',
+            autoplay:3000,
+            breakpoints: {
+                800: {
+                    perView:2
+                },
+                480: {
+                    perView:1
+                }
+            }
+        }
+        new Glide('.glide', config).mount()
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      // You can also pass an optional settings object
+// below listed default settings
+    </script>
+</body>
+
+</html>
