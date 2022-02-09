@@ -16,7 +16,22 @@
   body{
     font-family: montserrat;
   }
-  nav{
+
+.navbar-brand{
+  font-family: logo; 
+}
+
+.nav-link:active, .nav-link:hover{
+
+  background: #1b9bff;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+
+
+  
+  /* nav{
     position: sticky;
     top: 0px;
     width: 100%;
@@ -115,7 +130,7 @@
     #check:checked ~ ul{
       left: 0;
     }
-  }
+  } */
   
   .sobre{
     border-top: solid;
@@ -169,8 +184,15 @@
     }
 }
 
+.container-fluid{
+  padding: 24px 12px;
+  background: #edf0f4;
+  margin-top: 1.5em;
+}
+
 .container{
-  
+
+
   padding: 24px 12px;
   background: #edf0f4;
   margin-top: 1.5em;
