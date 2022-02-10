@@ -28,130 +28,23 @@
     border-radius: 5px;
 }
 
-
-
-  
-  /* nav{
-    position: sticky;
-    top: 0px;
-    width: 100%;
-    height: 100px;
-    background-color: #092a49;
-    z-index: 1;
-  }
-  #logoImg{
-    margin-top: 5px;
-    margin-left: 75px;
-    float: left;
-    width: 100px;
-    height: 80px;
-  }
-  label.logo{
-    
-    font-family: logo;
-    color: white;
-    font-size: 50px;
-    line-height: 85px;
-    padding: 0 10px;
-  }
-  nav ul{
-    float: right;
-    margin-right: 20px;
-  }
-  nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-  }
-  nav ul li a{
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-  }
-  a.active,a:hover{
-    background: #1b9bff;
-    transition: .5s;
-  }
-  .checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 85px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check{
-    display: none;
-  }
-  @media (max-width: 952px){
-    label.logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }
-  @media (max-width: 858px){
-    
-    #logoImg{
-      margin-left: 8em;
-    }
-
-    .checkbtn{
-      display: block;
-      margin-right: 200px;
-    }
-    ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #2c3e50;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-    }
-    nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li a{
-      font-size: 20px;
-    }
-    a:hover,a.active{
-      background: none;
-      color: #0082e6;
-    }
-    #check:checked ~ ul{
-      left: 0;
-    }
-  } */
   
   .sobre{
     border-top: solid;
     border-color: #353839;
     width: 100%;
-    height: 20em;
-    padding: 0px 3px;
+    height: 17em;
   }
   .details{
-    
-    
     background-image: url(FUNDO1.jpg);
-    
-    
     height: 100%;
     width: 100%;
+    padding-bottom: 20em;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
   }
-  #primary{
+  .primary{
     
     color: white;
     padding-top: 1rem;
@@ -163,15 +56,15 @@
     color: #d6daf5;
     margin: 10px 0;
     padding-left: 30px;
-    padding-bottom: 10em;
+    padding-bottom: 0.5vw;
   }
 
   .desc{
-    font-size: clamp(1em, 5vw,2em);
+    font-size: clamp(0.5em, 5vw, 1.5em);
   }
 
   @media screen and (max-width: 952px){
-    #primary{
+    .primary{
       font-size: 44.8px;	
     }
 
@@ -204,7 +97,7 @@
   color: #165a72;
   font-weight: 100;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 47.2px;
+  font-size: clamp(2em, 5vw,4em);
   padding: 10px 2em;
 }
 
@@ -233,7 +126,7 @@
 }
 ul li h3{
   color: black;
-  font-size: 30px;
+  font-size: clamp(1em, 2.5vw, 3em);
   font-weight: 500;
 }
 button{
@@ -485,32 +378,6 @@ button{
     .flex-child{
       width: 5.5em;
       height: 16.5em;
-    }
-
-  }
-
-  @media (max-width:425px) {
-
-    label.logo{
-      display: none;
-    }
-
-    .details{
-      height: 20em;
-      
-    }
-
-    #primary{
-      font-size: 30px;
-    }
-
-    .sobre{
-      height: 20em;
-    }
-
-    .flex-container_consultoria{
-
-      display: inline-block;
     }
 
   }
