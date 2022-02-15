@@ -17,16 +17,28 @@
     font-family: montserrat;
   }
 
+  
+
 .navbar-brand{
   font-family: logo; 
 }
 
 .nav-link:active, .nav-link:hover{
-
   background: #1b9bff;
     transition: .5s;
     border-radius: 5px;
 }
+
+.nav-link{
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  
+}
+
 
   
   .sobre{
@@ -49,7 +61,7 @@
     color: white;
     padding-top: 1rem;
     padding-left: 30px;
-    font-size: 70px;
+    font-size: clamp(1.50rem, 3vw, 5rem);
   }
 
   .sobre .desc{
@@ -60,27 +72,13 @@
   }
 
   .desc{
-    font-size: clamp(0.5em, 5vw, 1.5em);
+    font-size: clamp(0.67em, 4vw, 2em);
   }
-
-  @media screen and (max-width: 952px){
-    .primary{
-      font-size: 44.8px;	
-    }
-
-    .logoSobre{
-      max-width: 100%;
-      max-height: 300px;
-      width: 300px;
-      height: auto;
-      object-fit: contain;
-    }
-}
 
 
 
 .container-fluid{
-  padding: 24px 12px;
+  padding-top: 24px;
   background: #edf0f4;
   margin-top: 1.5em;
 }
@@ -141,31 +139,26 @@ button{
 .consultoria{
   background-image: url(SEILA.jpeg);
   display: inline-block;
-  position: relative;
-  width: 50%;
-  height: 25em;
+  height: auto;
   background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-bottom: 3vw;
 }
 
 .consultoriaText{
-  display: inline-block;
   color: rgb(247, 247, 247);
-  padding-top: 20px;
-  padding-left: 30px;
-  font-size: 5em;}
+  padding-top: 1vh;
+  margin-left: 1rem;
+  font-size: clamp(1em, 6vw, 3em)
 
-.consultoria h3{
-  color: rgb(247, 247, 247);
-  font-weight: 430;
-    margin: 10px 0;
-    font-size: 40px;
-    line-height: 43px;
-    padding-left: 30px;
-    padding-bottom: 25px;
-  
 }
+
+.consultoria {
+  color: rgb(247, 247, 247);
+    margin: 10px 0;
+    padding-left: 30px;
+    font-size: clamp(1vw, 1em + 1vw, 2em)}
 .animate-consultoria{
   
   overflow: hidden;
@@ -198,74 +191,7 @@ button{
 
 }
 
-.flex-child {
-  flex: 1;
-  width: 180px;
-  height: 25em;
-  border: 2px solid yellow;
-  background-color: green;
-  margin-right: 20px;
-  padding-right: 50px;
-}  
 
-
-@media (max-width: 1000px){
-
-  .consultoriaText{
-    font-size: 30px;
-  }
-
-  .consultoria h3{
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  .flex-child{
-    width: 100px;
-    margin-right: 5px;
-    height: 16.5em;
-  }
-
-  .consultoria{
-    height: 16.5em;
-  }
-}
-
-@media (max-width: 768px){
-  .consultoria{
-    height: 16.5em;
-    width: 26em;
-  }
-
-  .flex-child{
-    width: 90px;
-    height: 16.5em;
-    margin-left: 10px;
-  }
-}
-
-@media (max-width: 425px) {
-  
-  .consultoriaText{
-    font-size: 25px;
-  }
-
-  .consultoria h3{
-    font-size: 20px;
-    line-height: 18px;
-  }
-
-  .consultoria{
-    height: 16.5em;
-    width: 50%;
-  }
-
-  .flex-child{
-    margin-left: -5px;
-    width: 80px;
-    height: 16.5em;
-  }
-}
 
 .projetos{  
   background-image: url(fundo_projetos.jpeg);
@@ -285,13 +211,13 @@ button{
     color: rgb(247, 247, 247);
     padding-top: 20px;
     padding-left: 30px;
-    font-size: 5em;}
+    font-size: clamp(1em, 1em + 3vw, 2.5em);  
+  }
   
   .projetos h3{
     color: rgb(247, 247, 247);
     font-weight: 430;
       margin: 10px 0;
-      font-size: 40px;
       line-height: 43px;
       padding-left: 30px;
       padding-bottom: 25px;
@@ -304,83 +230,13 @@ button{
   
   }
   
-  .flex-child {
-    flex: 1;
-  width: 180px;
-  height: 25em;
-  border: 2px solid yellow;
+  .child {
+  width: auto;
+  height: 19.5em;
+  border: 1px solid yellow;
   background-color: green;
-  margin-right: 20px;
-  padding-right: 50px;
   }  
   
-  /* MEDIAS QUERIES */
-
-  @media (max-width: 1024px) {
-    #logoImg{
-      margin-left: 20px;
-    }
-
-    label.logo{
-      font-family: logo;
-    color: white;
-    font-size: 35px;
-    line-height: 85px;
-    padding: 0 10px;
-    }
-
-    nav ul li a{
-      color: white;
-      font-size: 13.5px;
-      padding: 7px 13px;
-      border-radius: 3px;
-      text-transform: uppercase;
-    }
-
-    .consultoriaText, .projetosText{
-      font-size: 3.5em;
-    }
-
-    .consultoria h3{
-      font-size: 2em;
-      line-height: 40px;
-    }
-
-    .projetos h3{
-      font-size: 2em;
-      line-height: 40px;
-    }
-
-    .flex-child{
-      width: 8em;
-      height: 25em;
-      margin-left: 10px;
-    }
-  }
-
-  @media (max-width: 768px) {
-      .checkbtn{
-        margin-right: 50px;
-        line-height: 85px;
-      }
-
-      .consultoria, .projetos{
-        width: 24em;
-        height: 16.5em;
-      }
-
-
-      .consultoria h3, .projetos h3{
-        font-size: 1.5em;
-        line-height: 20px;
-      }
-      
-    .flex-child{
-      width: 5.5em;
-      height: 16.5em;
-    }
-
-  }
 
 
   
