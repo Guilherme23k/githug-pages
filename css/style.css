@@ -149,61 +149,36 @@ button{
 .consultoriaText{
   color: rgb(247, 247, 247);
   padding-top: 1vh;
-  margin-left: 1rem;
+  margin-left: 1vw;
   font-size: clamp(1em, 6vw, 3em)
 
 }
 
-.consultoria {
+.consultoria p {
   color: rgb(247, 247, 247);
     margin: 10px 0;
-    padding-left: 30px;
-    font-size: clamp(1vw, 1em + 1vw, 2em)}
-.animate-consultoria{
-  
-  overflow: hidden;
-  white-space: nowrap;
-  animation: type 3.5s steps(40,end), caret-blink 500ms ease infinite;
-  border-right: 5px solid white;
-  animation-delay: 1s;
-}
-@keyframes type {
-  from{width: 0;}
-  to{width: 6.4em;}
-}
-
-@keyframes caret-blink {
-  0% {
-    border-color: transparent;
+    padding-left: 1vw;
+    font-size: clamp(1vw, 1em + 1vw, 2em)
   }
 
-  50%{
-    border-color: white;
-  }
 
-  100%{
-    border-color: transparent;
-  }
-}
-.flex-container_consultoria {
-  display: flex;
-  float: right;
-
-}
 
 
 
 .projetos{  
   background-image: url(fundo_projetos.jpeg);
   display: inline-block;
-  position: relative;
-  width: 50%;
-  height: 25em;
+  height: auto;
   background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-bottom: 3vw;
+
 }
 
+.coluna{
+  height: 18em;
+}
 
   
   .projetosText{
@@ -214,25 +189,18 @@ button{
     font-size: clamp(1em, 1em + 3vw, 2.5em);  
   }
   
-  .projetos h3{
+  .projetos p{
     color: rgb(247, 247, 247);
-    font-weight: 430;
-      margin: 10px 0;
-      line-height: 43px;
-      padding-left: 30px;
-      padding-bottom: 25px;
+    margin: 10px 0;
+    padding-left: 1vw;
+    font-size: clamp(1vw, 1em + 1vw, 2em)
     
   }
   
-  .flex-container_projetos{
-    display: flex;
-    float: left;
   
-  }
   
   .child {
-  width: auto;
-  height: 19.5em;
+  height: 18em;
   border: 1px solid yellow;
   background-color: green;
   }  
